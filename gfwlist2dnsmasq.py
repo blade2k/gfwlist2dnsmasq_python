@@ -44,7 +44,7 @@ ip_pattern = re.compile(r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b')
 tmpfile = '/tmp/gfwlisttmp'
 # do not write to router internal flash directly
 outfile = '/tmp/dnsmasq_list.conf'
-rulesfile = './dnsmasq_list.conf'
+rulesfile= '/etc/dnsmasq.d/foreign_list.conf'
  
 fs =  file(outfile, 'w')
 fs.write('# gfw list ipset rules for dnsmasq\n')
